@@ -16,7 +16,7 @@ public class MergeSort{
         }
 
         while(ind2 <= ei){
-            merged[m++]= arr[ind2++]; // if the size of element of  the dived array is not same 
+            merged[m++]= arr[ind2++]; // if the size of element of  the divided array is not same 
         }
         while(ind1 <=mid){
            merged[m++] = arr[ind1++]; 
@@ -30,7 +30,7 @@ public class MergeSort{
         if(si >= ei){
             return;
         }
-        // Divede Ologn time
+        // Divide Ologn time
        int  mid = si +(ei -si)/2;  // (si+ei)/2 this method will take more time in bigger problem
         divide(arr, si, mid);
         divide(arr, mid+1,ei);
